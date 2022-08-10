@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="azure_firmo">
+    <title>ENCRIPTADOR Alura + ONE</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <link rel="icon" type="image/x-icon" href="css/img/favicon.svg">
+    <!-- tag property -->
+    <meta property="og:type" content="image/png">
+    <meta property="og:image:width" content="660">
+    <meta property="og:image:height" content="405">
+    <meta property="og:image:alt" content="Encriptador de textos">
+    <meta property="og:title" content="Encriptador de textos desenvolvido com JavaScript">
+    <meta property="og:description" content="Encriptador de textos desenvolvido com JavaScript - Esse Projeto faz parte do curso de programação da Alura + Oracle">
+    <meta name="twitter:card" content="summary_large_image">
+    </head>
+    <body>
+        <main>
+            <header>
+                <div id="barraSuperior">
+                    <a href="https://www.alura.com.br/oracle-next-education" target="_blank">
+                        <picture>
+                            <source media="(max-width:800px )" srcset="css/img/logoAluraLetraA.svg">
+                            <img src="css/img/logoAluraG.svg" alt="Alura">
+                        </picture>
+                    </a>
+                    <div id="th1"><h2 class="typing-animation" id="titulo">Encriptador</h2></div>
+                    <a class="plink" href="https://azurefirmo.vercel.app" target="_blank">
+                        azure_firmo
+                    </a>
+                </div>
+            </header>
+            <div id="aviso">&nbsp;</div>
+            <div id="txt">
+                <div></div>
+                <div>
+                    <textarea class="txts" rows="15" id="entrada" placeholder="Texto para criptografar / descriptografar" autofocus="true" required></textarea>
+                </div>
+                <div>
+                    <textarea class="txts" rows="15" id="saida" placeholder="Saída criptografada / descriptografada" disabled></textarea>
+                </div>
+                <div></div>
+            </div>
+            <div id="troca">
+                <div id="alerta">
+                    <div id="alerta"><i class="fa-solid fa-circle-exclamation fa-2x"></i>
+                        </i><p>&nbsp;São permitidas apenas letras minúsculas e sem acentos!</p>
+                    </div>
+                    <div id="outroalerta">
+                        <a href="javascript:void(0)" onclick="share()"></i></a>
+                    </div>
+                </div>
+                <div id="botoes">
+                    <button onclick="criptografar()" class="btns">criptografar</button>
+                    <button onclick="descriptografar()" class="btns">descriptografar</button>
+                    <button onclick="copiarEColar()" class="btns">copiar e colar</button>
+                    <button onclick="limpar()" class="btns">limpar</button>
+                </div>
+            </div>
+            <hr>
+            <div id="txtTec"><p>Tecnologias utilizadas neste desafio</p></div>
+            <div id="tecs">
+                <div><i class="fa-brands fa-html5 fa-3x"></i><p>HTML5</p></div>
+                <div><i class="fa-brands fa-css3-alt fa-3x"></i><p>CSS3</p></div>
+                <div><i class="fa-brands fa-js fa-3x"></i><p>JavaScript</p></div>
+            </div>
+            <footer>
+                <div id="meusLinks"> 
+                    <a href="https://www.linkedin.com/in/azurefirmo/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x corBranca"></i></a>
+                    <a href="https://github.com/azurefirmo" target="_blank"><i class="fa-brands fa-git-alt fa-2x corBranca"></i></a>
+                    <a href="javascript:void(0)" onclick="share()"><i class="fa-solid fa-share-nodes fa-2x corBranca"></i></a>
+                </div>
+            </footer>
+        </main>
+    </body>
+    <script src="https://kit.fontawesome.com/e801e4a6d3.js" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
+</html>

@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body,
+textarea,
+button {
+  font-family: "Roboto", monospace;
+  background: #ffffff;
+}
+
+#barraSuperior {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #007fff;
+  justify-items: center;
+  align-items: center;
+}
+
+#titulo {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  border-right: 2px solid rgba(255, 255, 255, 255);
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  user-select: none;
+  font-size: 1.5em;
+}
+
+#aviso {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  color: red;
+}
+
+#txt {
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  text-align: center;
+}
+
+.txts {
+  width: 90%;
+  height: 100%;
+  margin-bottom: 30px;
+  resize: none;
+  color: black;
+  outline: none;
+  background-image: url("../css/img/marca-d-agua.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 5px;
+}
+
+.typing-animation {
+  animation: blinkCursor 1s 400ms steps(20) normal infinite,
+    typing 4s steps(20) normal 5s;
+}
+
+@keyframes typing {
+  from {
+    width: 0em;
+  }
+  to {
+    width: 11.5rem;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+#botoes {
+  text-align: center;
+}
+
+.btns {
+  background-color: #007fff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btns:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.plink {
+  transition-duration: 500ms;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+hr {
+  max-width: 70%;
+  margin-top: 50px;
+}
+
+#alerta {
+  display: flex;
+  color: #007fff;
+  grid-gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#alerta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#outroalerta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#txtTec {
+  padding: 70px 0px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #007fff;
+}
+
+#tecs {
+  display: flex;
+  padding: 50px 0px 70px;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  color: #007fff;
+}
+
+#meusLinks {
+  padding: 30px 0px 30px;
+  display: flex;
+  background: #007fff;
+  justify-content: center;
+  grid-gap: 10%;
+}
+
+#shareV {
+  color: #007fff;
+}
+
+.corBranca {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  #troca {
+    display: grid;
+  }
+  #alerta {
+    order: 2;
+  }
+  #botoes {
+    order: 1;
+  }
+}
